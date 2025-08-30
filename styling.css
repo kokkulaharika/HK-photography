@@ -1,0 +1,245 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+.main-content{
+    background-color:rgb(215, 235, 32,0.9);
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-content ul{
+    display: flex;
+    list-style-type: none;
+}
+.main-content ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 21px;
+    color: black;
+    
+}
+.main-content ul li a:hover{
+    background-color: lightgoldenrodyellow;
+    color: rgb(80, 80, 45);
+    box-shadow: 0 0 15px black;
+    border-radius: 20px;
+}
+.Home-section{
+    background: white url("image1.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+.section{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.section h1{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.section p{
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 500px;
+    font-size: 20px;
+    font-style: italic;
+}   
+.image2 img{
+    display: grid;
+    margin-left: 100px;
+    margin-top: 60px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px grey;
+    animation-name: test;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes test{
+    0%{transform: rotateZ(0);}
+    100%{transform: rotateZ(90deg);}
+}
+.categories{
+    text-align: center;
+    padding: 15px;
+    font-style: italic;
+    font-size: 25px;
+    margin: 25px;
+}
+.categories p{
+    margin-top: 15px;
+}
+figure{
+    box-shadow: 0 0 10px black;
+    width: 320px;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 35px 0 0 25px;
+}
+figure img{
+    margin: 35px 0 15px 0;
+    box-shadow: 0 0 10px black;
+}
+figure p{
+    font-size: 18px;
+    margin: 0 10px 10px 10px;
+
+}
+.List button{
+    padding: 10px;
+    border: none;
+    font-size: 16px; 
+    width: 200px;
+    margin: 10px 0 20px 450px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border-radius: 10px;
+    font-style: italic;
+    box-shadow: 0 0 20px white;
+}
+.List button:hover{
+    box-shadow: 0 0 20px goldenrod;
+    background-color: azure;
+    color: black;
+}
+.List h1{
+    text-align: center;
+    margin-bottom: 17px;
+}
+.List{
+    background-image: url("pexels-fonok-403495.jpg");
+    background-size: cover;
+    border-radius: 18px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.8);
+    font-size: 16px;
+    margin-left: 80px;
+    margin-right: 60px;
+    color: white;
+    font-style: italic;
+}
+.List ul li{
+    margin: 17px;
+}
+.about{
+    text-align: center;
+    padding: 15px;
+    margin: 30px 20px 0 20px;
+    font-size: 20px;
+    font-style: italic;
+}
+.about p{
+    margin: 17px;
+}
+.details{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+details{
+    display: inline-block;
+    margin: 20px;
+    margin-top: 10px;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+details p{
+    font-size: 20px;
+}
+.contact{
+     margin: 20px;
+     background-color:rgb(210, 210, 21);
+     margin: 10px 0 0 0;
+}
+.contact h1{
+    margin: 20px 0 20px 30px;
+}
+.contact i{
+    margin: 16px;
+    font-size: 20px;
+}
+.fa-phone{
+    font-size: 50px;
+    color: green;
+}
+.fa-instagram{
+    font-size: 50px;
+    color: linear-gradient(45deg,pink,blue);
+}
+.fa-envelope{
+    color: red;
+    font-size: 50px;
+}
+.fa-twitter{
+    color: blue;
+    font-size: 50px;
+}
+footer{
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+footer p{
+    margin: 10px 0 0 0;
+    font-size: 19px;
+}
+.contact a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: black;
+    font-size: 16px;
+}
+/*Media queries for responsive*/
+@media (max-width: 768px){
+    .main-content{
+        flex-direction: column;
+    }
+    .section{
+        flex-direction: column;
+    }
+    .section p{
+        width: 300px;
+    }
+    .image2 img{
+       width: 100px;
+       height: 100px;
+    }
+    .List button{
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+        margin-left: 170px;
+    }
+}
+@media (min-width:769px) and (max-width: 1200px){
+    .image2 img{
+       width: 120px;
+       height: 120px;
+}
+.section p{
+        width: 500px;
+    }
+.List button{
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+        margin-left: 230px;
+    }
+
+}
+
