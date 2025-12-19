@@ -59,7 +59,7 @@ document.getElementById('registerForm').addEventListener('submit', function(e) {
   // If valid -> success message
   if (isValid) {
     feedback.style.color = 'green';
-    feedback.textContent = '✅ Thank you! Your registration has been received.';
+    feedback.textContent = 'Thank you! Your registration has been received.';
     console.log({
       name, email, phone,
       shootType: this.shootType.value,
@@ -70,7 +70,7 @@ document.getElementById('registerForm').addEventListener('submit', function(e) {
     this.reset();
   } else {
     feedback.style.color = 'red';
-    feedback.textContent = '⚠️ Please correct the errors and try again.';
+    feedback.textContent = ' Please correct the errors and try again.';
   }
 
   // Helper to show error message
@@ -79,4 +79,5 @@ document.getElementById('registerForm').addEventListener('submit', function(e) {
     const errorEl = inputField.closest('.form-group, .form-check').querySelector('.error');
     if (errorEl) errorEl.textContent = message;
   }
+
 });
